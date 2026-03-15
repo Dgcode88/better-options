@@ -3,16 +3,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "LogiRemap",
+    name: "BetterOptions",
     platforms: [
         .macOS(.v13),
     ],
     products: [
-        .executable(name: "LogiRemap", targets: ["LogiRemap"]),
+        .executable(name: "BetterOptions", targets: ["BetterOptions"]),
     ],
     targets: [
         .executableTarget(
-            name: "LogiRemap",
+            name: "BetterOptions",
             path: "Sources"
         ),
     ]

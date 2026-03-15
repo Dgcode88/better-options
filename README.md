@@ -1,6 +1,6 @@
-# LogiRemap
+# Better Options
 
-Small macOS menu bar app that remaps an `MX Master 3` / `MX Master 3 Mac`:
+Better Options is a small macOS menu bar app for remapping an `MX Master 3` / `MX Master 3 Mac`:
 
 - Thumb wheel left/right -> system volume down/up
 - Back side button -> Wispr Flow push-to-talk
@@ -9,7 +9,7 @@ Small macOS menu bar app that remaps an `MX Master 3` / `MX Master 3 Mac`:
 
 ```bash
 swift build
-.build/debug/LogiRemap
+.build/debug/BetterOptions
 ```
 
 Or:
@@ -22,13 +22,13 @@ To build a normal macOS app bundle that is easier to grant in Accessibility:
 
 ```bash
 ./scripts/build_app_bundle.sh
-open dist/LogiRemap.app
+open dist/BetterOptions.app
 ```
 
 ## Requirements
 
 - macOS 13+
-- Accessibility permission for `LogiRemap`
+- Accessibility permission for `Better Options`
 - Wispr Flow installed if you want the push-to-talk remap
 
 ## Notes

@@ -1,7 +1,7 @@
 import AppKit
 
 @main
-struct LogiRemapApp {
+struct BetterOptionsApp {
     private static let delegate = AppDelegate()
 
     @MainActor

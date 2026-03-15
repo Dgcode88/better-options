@@ -65,7 +65,7 @@ final class AppCoordinator: NSObject {
 
     private func buildMenu() {
         let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        item.button?.title = "Logi"
+        item.button?.title = "Options"
         statusItem = item
 
         let menu = NSMenu()
@@ -102,7 +102,7 @@ final class AppCoordinator: NSObject {
         helpItem.target = self
         menu.addItem(helpItem)
 
-        let quitItem = NSMenuItem(title: "Quit LogiRemap", action: #selector(quitApp), keyEquivalent: "q")
+        let quitItem = NSMenuItem(title: "Quit Better Options", action: #selector(quitApp), keyEquivalent: "q")
         quitItem.target = self
         menu.addItem(quitItem)
 
@@ -156,12 +156,12 @@ final class AppCoordinator: NSObject {
 
     private func summaryTitle(hasDevice: Bool, hasPermission: Bool, wisprReady: Bool) -> String {
         if !hasPermission {
-            return "Logi !"
+            return "Options !"
         }
         if !hasDevice {
-            return "Logi ?"
+            return "Options ?"
         }
-        return wisprReady ? "Logi MX" : "Logi MX!"
+        return wisprReady ? "Options MX" : "Options MX!"
     }
 
     @objc
